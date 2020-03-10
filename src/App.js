@@ -105,15 +105,18 @@ export default function CenteredGrid() {
                   <TextField required id="standard-required" label="Required" />
                   <TextField required id="standard-required" label="Required" />
                 </div>
+                <Divider />
                 <div>
                   <TextField required id="standard-required" label="Required" />
                   <TextField required id="standard-required" label="Required" />
                   <TextField required id="standard-required" label="Required" />
                 </div>
+                <Divider />
                 <div>
                   <TextField required id="standard-required" label="Required" />
                   <TextField required id="standard-required" label="Required" />
                 </div>
+                <Divider />
                 <div>
                   <TextField required id="standard-required" label="Required" />
                   <TextField required id="standard-required" label="Required" />

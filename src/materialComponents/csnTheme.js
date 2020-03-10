@@ -97,6 +97,11 @@ const cytelTheme = createMuiTheme({
         height: 48
       }
     },
+    MuiDivider: {
+      root: {
+        margin: "35px 0"
+      }
+    },
     MuiTableCell: {
       head: {
         fontWeight: "lighter",
