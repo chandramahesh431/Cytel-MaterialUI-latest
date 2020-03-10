@@ -17,9 +17,21 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import Typography from "@material-ui/core/Typography";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Divider from "@material-ui/core/Divider";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
 import "./App.css";
 
+const useStyles = makeStyles(theme => ({
+  root: {
+    "& .MuiTextField-root": {
+      margin: theme.spacing(1),
+      width: 200
+    }
+  }
+}));
+
 export default function CenteredGrid() {
+  const classes = useStyles();
   return (
     <Grid container>
       <Grid className="left-panel" item xs={12} sm={3} md={2}>
@@ -85,60 +97,27 @@ export default function CenteredGrid() {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Grid item xs="12">
-              <Grid item xs="12">
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-                <Divider />
-              </Grid>
-              <Grid item xs="12">
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </Grid>
-              <Grid item xs="12">
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </Grid>
-              <Grid item xs="12">
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </Grid>
-              <Grid item xs="12">
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </Grid>
-              <Grid item xs="12">
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
+              <Grid item xs="12" className={classes.root}>
+                <div>
+                  <TextField required id="standard-required" label="Required" />
+                  <TextField required id="standard-required" label="Required" />
+                  <TextField required id="standard-required" label="Required" />
+                  <TextField required id="standard-required" label="Required" />
+                  <TextField required id="standard-required" label="Required" />
+                </div>
+                <div>
+                  <TextField required id="standard-required" label="Required" />
+                  <TextField required id="standard-required" label="Required" />
+                  <TextField required id="standard-required" label="Required" />
+                </div>
+                <div>
+                  <TextField required id="standard-required" label="Required" />
+                  <TextField required id="standard-required" label="Required" />
+                </div>
+                <div>
+                  <TextField required id="standard-required" label="Required" />
+                  <TextField required id="standard-required" label="Required" />
+                </div>
               </Grid>
             </Grid>
           </ExpansionPanelDetails>
