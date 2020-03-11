@@ -1,6 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: white;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif !important;
+}
+
 @media only screen and (min-width: 480px) {
   .left-panel {
-    height: 100vh;
+    /* height: 100vh; */
     padding: 10px 0;
     border-right: 1px solid #e4ddddad;
     box-shadow: 2px -1px 2px -2px rgba(0, 0, 0, 0.14);
@@ -12,4 +30,57 @@
 }
 .right-panel {
   padding: 10px;
+}
+.Container {
+  background-color: white;
+  width: 100vw;
+  /* min-height: 100vw; */
+  max-height: 100vh;
+  /* margin-top: 40px; */
+  border: #e4ddddad solid 1px;
+  padding: 3px;
+  padding-bottom: 10px;
+}
+#panel1d-header {
+  background-color: whitesmoke;
+  /* margin-top: 30px; */
+}
+
+.ContainerHeader {
+  background-color: white;
+  width: 100vw;
+  /* min-height: 100vw; */
+  max-height: 100vh;
+  /* margin-top: 40px; */
+  border: #e4ddddad solid 1px;
+  padding: 3px;
+  padding-bottom: 10px;
+}
+
+.main {
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+.txtfield {
+  border: #e4ddddad solid 2px !important;
+}
+.txtfieldRequired {
+  border: #e4ddddad solid 2px !important;
+  border-left: orange solid 2px !important;
+}
+.pic {
+  float: right;
+}
+
+.ContainerBreadCum {
+  background-color: whitesmoke;
+  width: 100vw;
+  /* min-height: 100vw; */
+  max-height: 100vh;
+  /* margin-top: 40px; */
+  border: #e4ddddad solid 1px;
+  padding: 3px;
+  padding-bottom: 10px;
+  border-style: none;
 }

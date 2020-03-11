@@ -32,18 +32,18 @@ const cytelTheme = createMuiTheme({
     body1: {
       color: { main: colors.tertiary },
       fontWeight: 300,
-      fontSize: 14,
+      fontSize: 13,
       fontFamily: ["Roboto", "Helvetica", "Arial", "sans-serif"].join(",")
     },
     body2: {
       color: colors.textLight,
       fontWeight: 300,
-      fontSize: 14
+      fontSize: 11
     },
     subtitle1: {
       color: "#757575",
       fontWeight: 100,
-      fontSize: 18
+      fontSize: 11
     }
   },
 
@@ -66,7 +66,7 @@ const cytelTheme = createMuiTheme({
     },
     MuiCardHeader: {
       title: {
-        fontSize: 20,
+        fontSize: 11,
         color: colors.textPrimary
       }
     },
@@ -84,7 +84,15 @@ const cytelTheme = createMuiTheme({
     },
     MuiInputBase: {
       root: {
-        display: "block"
+        display: "block",
+        fontFamily: "Roboto, Helvetica, Arial, sans-serif !important",
+        fontSize: 12
+      }
+    },
+    MuiInput: {
+      root: {
+        fontFamily: "Roboto, Helvetica, Arial, sans-serif !important",
+        fontSize: 12
       }
     },
     MuiTableRow: {
@@ -97,16 +105,32 @@ const cytelTheme = createMuiTheme({
         height: 48
       }
     },
+    MuiAvatar: {
+      root: {
+        float: "right",
+        cursor: "pointer"
+      }
+    },
+    MuiExpansionPanelSummary: {
+      root: {
+        "&$expanded": { minHeight: 20 }
+      },
+      content: {
+        "&$expanded": {
+          margin: 0
+        }
+      }
+    },
     MuiDivider: {
       root: {
-        margin: "35px 0"
+        margin: "8px 0"
       }
     },
     MuiTableCell: {
       head: {
         fontWeight: "lighter",
         backgroundColor: "#f2f2f2",
-        fontSize: 14,
+        fontSize: 11,
         color: "#4a4a4a"
       },
       root: {
@@ -122,7 +146,7 @@ const cytelTheme = createMuiTheme({
         height: "auto"
       },
       body: {
-        fontSize: 14,
+        fontSize: 11,
         fontWeight: "lighter",
         color: "rgba(0, 0, 0, 0.54)",
         fontFamily: ["Roboto", "Helvetica", "Arial", "sans-serif"].join(",")
@@ -148,7 +172,7 @@ const cytelTheme = createMuiTheme({
     MuiTab: {
       root: {
         fontWeight: 300,
-        fontSize: 14,
+        fontSize: 11,
         minWidth: "0 !important"
       },
       label: {
@@ -197,17 +221,15 @@ const cytelTheme = createMuiTheme({
         color: "#fff"
       }
     },
+    MuiMenuItem: {
+      root: {
+        fontSize: 11
+      }
+    },
     MuiList: {
       padding: {
         paddingTop: 0,
         paddingBottom: 0
-      }
-    },
-    MuiExpansionPanelSummary: {
-      root: {
-        "&MuiExpansionPanelSummary-expanded": {
-          minHeight: 48
-        }
       }
     },
     MuiSnackbar: {
