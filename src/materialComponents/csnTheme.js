@@ -121,6 +121,7 @@ const cytelTheme = createMuiTheme({
         }
       }
     },
+
     MuiDivider: {
       root: {
         margin: "8px 0"

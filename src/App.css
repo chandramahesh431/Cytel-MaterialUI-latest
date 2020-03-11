@@ -29,7 +29,7 @@ body {
   color: blue !important;
 }
 .right-panel {
-  padding: 10px;
+  padding: 30px !important;
 }
 .Container {
   background-color: white;
